@@ -1,0 +1,26 @@
+#img_tag{
+    border-radius: 50%;
+}
+#oneT{
+    font-size: larger;
+    font-display: larger;
+}
+#txt{
+    display: flex;
+    justify-content:space-between;
+}
+button{
+    font-size: large;
+    margin-top: 35px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(93, 59, 93);
+  color: white;
+}
+#btn{
+    justify-content: space-evenly;
+    display: flex;
+}
+body{
+    /* background-color: black; */
+}

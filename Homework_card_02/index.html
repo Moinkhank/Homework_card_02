@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<link rel="stylesheet" href="index.css">
+    <title>Card-02</title>
+</head>
+<body>
+     <div id="root">  </div>
+
+        <script type="text/babel"> 
+        var cardStyle = {
+                  width:"400px",
+                 textAlign:"center",
+                  padding:"20px",
+                  boxShadow:"0 0 10px black"
+                 
+              }
+              function createCard(){
+              return  <div style={cardStyle}>  
+                       <img 
+                       width="70%%"
+                       height="250"
+                          id="img_tag"
+                       src="https://th.bing.com/th/id/OIP.8dXAPjb4l-9owHKmx3zSzQAAAA?pid=ImgDet&rs=1" />
+                       <h2> Alexandra caulea </h2>
+                       <p>I enjoy drinking a cup of coffee every day</p>
+                       <div id="txt">
+                        <div id="oneT" >172 <br/> POSTS</div>
+                        <div id="oneT" >47<br/> FOLLOWERS</div>
+                        <div id="oneT" >20 <br/> FOLLOWING</div>
+                        </div>
+                        <div id="btn">
+                            <button>FOLLOW</button> <br/>
+                            <button>MESSAGE</button>
+                            </div>
+                    </div>
+
+              }
+               var container = <div style={{display:"flex",justifyContent:"space-evenly"}}>
+                 {createCard()}  
+            
+              
+                 </div>
+                    ReactDOM.render(container,document.getElementById('root'))
+        </script>
+</body>
+</html>
